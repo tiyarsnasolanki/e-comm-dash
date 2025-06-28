@@ -31,7 +31,7 @@ const AddProduct = () => {
     formData.append("image", image);
 
     try {
-      const res = await fetch("http://localhost:5000/add-product", {
+      const res = await fetch("https://e-comm-dash-4.onrender.com/add-product", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`, // no Content-Type here!

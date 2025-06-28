@@ -19,7 +19,7 @@ const UpdateProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/product/${id}`, {
+        const res = await fetch(`https://e-comm-dash-4.onrender.com/product/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

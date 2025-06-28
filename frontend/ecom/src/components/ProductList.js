@@ -15,7 +15,7 @@ const ProductList = () => {
 
   const fetchProducts = useCallback(async () => {
     try {
-      const response = await fetch("http://localhost:5000/products", {
+      const response = await fetch("https://e-comm-dash-4.onrender.com/products", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await response.json();
